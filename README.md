@@ -4,6 +4,7 @@ Tutorials used:
 
 - https://dev.to/georgehanson/building-vuejs-applications-with-typescript-1j2n
 - https://dev.to/georgehanson/building-vue-js-applications-with-typescript-part-two-2808
+- Modal with Tailwind + Vue : https://laravel-news.com/building-a-modal-with-vue-and-tailwind
 
 References :
 
