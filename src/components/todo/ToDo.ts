@@ -3,7 +3,6 @@ import WithRender from './to-do.html';
 import ToDoForm from './ToDoForm';
 import TaskItem from './TaskItem';
 import Task from '@/types/Task';
-// import store from '@/store';
 
 @WithRender
 @Component({
