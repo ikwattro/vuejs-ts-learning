@@ -11,16 +11,19 @@
   
 </div>
 <ToDo />
+<Highlight />
 </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import ToDo from '@/components/todo/ToDo.ts';
+import Highlight from '@/components/highlight/Highlight';
 
 @Component({
   components: {
     ToDo,
+    Highlight
   },
 })
 export default class Home extends Vue {}

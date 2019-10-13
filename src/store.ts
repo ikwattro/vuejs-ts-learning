@@ -11,6 +11,9 @@ export default new Vuex.Store({
       {description: 'Some other task', completed: true}
     ]
   },
+  getters: {
+    tasks: (state => state.tasks)
+  },
   mutations: {
     addTask(state, description: string) {
       state.tasks.push({description, completed: false});
