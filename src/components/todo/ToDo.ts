@@ -3,6 +3,7 @@ import WithRender from './to-do.html';
 import ToDoForm from './ToDoForm';
 import TaskItem from './TaskItem';
 import Task from '@/types/Task';
+// import store from '@/store';
 
 @WithRender
 @Component({
@@ -12,20 +13,19 @@ import Task from '@/types/Task';
   }
 })
 export default class ToDo extends Vue {
-  public tasks: Task[] = [
-    {description: 'Task 1', completed: false},
-    {description: 'Task 2', completed: true}
-  ];
+  private tasks: Array<Task> = [];
 
-  public addTask(description: string): void {
-    this.tasks.push({description, completed: false})
+  get Tasks(): Task[] {
+    let tasks = this.$store.state.tasks;
+    return tasks
+  }
+
+  public addTask(task: Task): void {
+    console.log(task);
+    this.$store.dispatch('addTask', task);
   }
 
   public completeTask(task: Task): void {
-    this.tasks.forEach(function (t) {
-      if (task.description === t.description) {
-        t.completed = true
-      }
-    })
+    this.$store.dispatch('completeTask', task);
   }
 }
