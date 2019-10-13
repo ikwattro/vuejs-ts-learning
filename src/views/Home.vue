@@ -6,11 +6,7 @@
   <h2>Example modal</h2>
   <p>This is example text passed through to the modal via a slot.</p>
 </card-modal>
-<button
-      class="bg-blue-600 text-white px-4 py-2 text-sm uppercase tracking-wide font-bold rounded-lg"
-      @click.prevent="showModal"
-    >
-</button>
+<v-btn small @click.prevent="showModal">show modal</v-btn>
 </div>
 
 </template>
