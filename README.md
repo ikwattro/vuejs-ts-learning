@@ -7,6 +7,8 @@ Tutorials used:
 
 References :
 
+Tailwind CSS Framework : https://tailwindcss.com/
+
 - Event names recommendations : https://vuejs.org/v2/guide/components-custom-events.html#Event-Names
 
 
