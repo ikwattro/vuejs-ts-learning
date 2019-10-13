@@ -5,6 +5,10 @@ Tutorials used:
 - https://dev.to/georgehanson/building-vuejs-applications-with-typescript-1j2n
 - https://dev.to/georgehanson/building-vue-js-applications-with-typescript-part-two-2808
 
+References :
+
+- Event names recommendations : https://vuejs.org/v2/guide/components-custom-events.html#Event-Names
+
 
 ## Project setup
 ```

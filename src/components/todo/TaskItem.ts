@@ -9,7 +9,7 @@ export default class TaskItem extends Vue {
   @Prop() task!: Task;
 
   public emitCompletion(): void {
-    this.$emit('taskCompleted', this.task)
+    this.$emit('task-completed', this.task)
   }
   
 }

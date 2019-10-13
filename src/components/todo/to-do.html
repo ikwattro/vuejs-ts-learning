@@ -1,9 +1,9 @@
 <div>
   <h1>My To-Do App!</h1>
-  <to-do-form @added="addTask" />
+  <to-do-form @task-added="task-added" />
   <ul>
     <li v-for="task in tasks">
-      <task-item :task="task" @taskCompleted="completeTask"/>
+      <task-item :task="task" @task-completed="completeTask"/>
     </li>
   </ul>
 </div>
